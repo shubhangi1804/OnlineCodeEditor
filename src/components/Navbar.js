@@ -1,14 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 function Navbar() {
+  let location = useLocation();
   return (
     <>
       <div>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-3">
           <div className="container-fluid">
-            <Link className="navbar-brand" to="/">
-              Navbar
+            <Link className="navbar-brand text-primary" to="/">
+              Online Code Editor
             </Link>
             <button
               className="navbar-toggler"
@@ -27,22 +28,22 @@ function Navbar() {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="/">
+                  <Link className={`nav-link ${location.pathname === "/" ? 'active': ""}`} aria-current="page" to="/">
                     Home
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="/webeditor">
+                  <Link className={`nav-link ${location.pathname === "/webeditor" ? 'active': ""}`} aria-current="page" to="/webeditor">
                     Web Editor
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="/custom">
+                  <Link className={`nav-link ${location.pathname === "/custom" ? 'active': ""}`} aria-current="page" to="/custom">
                     Custom Editor
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="/about">
+                  <Link className={`nav-link ${location.pathname === "/about" ? 'active': ""}`} aria-current="page" to="/about">
                     About Us
                   </Link>
                 </li>
