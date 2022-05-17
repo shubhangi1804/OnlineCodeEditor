@@ -7,22 +7,22 @@
 }
 
 .about{
-    height: 90vh;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-left: 200px;
+    padding: 50px;
     background: radial-gradient(rgba(0, 132, 255, 0.753), rgba(126, 30, 252, 0.589));
 }
 
 .about-heading{
     flex-basis: 50%;
-    min-width: 300px;
     align-items: center;
     border: 2px solid rgba(114, 42, 247, 0.144);
     padding: 50px;
     border-radius: 15px;
+    margin: 20px;
 }
 
 .about-heading h1{
@@ -34,6 +34,9 @@
     text-align: center;
     border: 2px solid rgba(114, 42, 247, 0.144);
     transition: all ease-in-out 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-heading h1:hover{

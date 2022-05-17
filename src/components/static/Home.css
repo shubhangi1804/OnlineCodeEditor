@@ -7,12 +7,12 @@
 }
 
 .home{
-    height: 90vh;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-left: 200px;
+    padding: 50px;
     background: radial-gradient(rgba(0, 132, 255, 0.753), rgba(126, 30, 252, 0.589));
 }
 
@@ -22,6 +22,7 @@
     align-items: center;
     border: 2px solid rgba(114, 42, 247, 0.144);
     padding: 50px;
+    margin-bottom: 50px;
     border-radius: 15px;
 }
 
