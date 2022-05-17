@@ -16,8 +16,8 @@ return (
         aria-label="Default select example"
         onChange={handleOnChange}
       >
-        <option selected value="null">
-          Select your language!
+        <option selected value="text">
+          Text
           </option>
         <option value="python" >Python</option>
         <option value="java">Java</option>
